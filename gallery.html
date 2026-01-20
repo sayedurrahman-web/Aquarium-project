@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery — City Zoo</title>
+<link rel="icon" href="images/penguin.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="images/Aquarium.png" alt="logo">
+      <div><h1>City Zoo</h1><div class="small">Explore. Learn. Protect.</div></div>
+    </div>
+    <nav>
+      <ul>
+        <li class="tooltip" data-tip="Go to Home"><a href="index.html">Home</a></li>
+        <li class="tooltip" data-tip="Visitor Info"><a href="visitors.html">Visitors</a></li>
+        <li class="tooltip" data-tip="See Exhibits"><a href="exhibits.html">Exhibits</a></li>
+        <li class="tooltip" data-tip="Animal Species"><a href="species.html">Species</a></li>
+        <li class="tooltip" data-tip="Photo Gallery"><a href="gallery.html">Gallery</a></li>
+        <li class="tooltip" data-tip="Volunteer with us"><a href="volunteer.html">Volunteer</a></li>
+        <li class="tooltip" data-tip="Jobs & openings"><a href="recruitment.html">Recruitment</a></li>
+        <li class="tooltip" data-tip="Buy Tickets"><a href="tickets.html">Tickets</a></li>
+        <li class="tooltip" data-tip="Join Membership"><a href="membership.html">Membership</a></li>
+        <li class="tooltip" data-tip="Contact us"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container" id="main">
+
+<div class="detail">
+  <h2>Gallery</h2>
+  <p class="small">Browse photos from our exhibits, events and conservation work. Click an image to enlarge and read more.</p>
+  <div class="gallery-grid" style="margin-top:12px;">
+    <img src="images/lion.jpg" data-src="images/lion.jpg" data-title="Lion" data-desc="The lion: powerful predators, apex of the savannah. Learn about their pride structure and conservation." alt="lion">
+    <img src="images/panda.jpg" data-src="images/panda.jpg" data-title="Panda" data-desc="The giant panda: a symbol of conservation, native to bamboo forests." alt="panda">
+    <img src="images/penguin.png" data-src="images/penguin.png" data-title="Emperor Penguin" data-desc="Emperor penguins thrive in cold climates and are famous for their parenting-care rituals." alt="penguin">
+    <img src="images/elepant.jpg" data-src="images/elepant.jpg" data-title="Elephant" data-desc="Elephants are keystone species—intelligent, social, and vital to their ecosystems." alt="elephant">
+
+    <img src="images/gorila.jpg" data-src="images/gorila.jpg" data-title="gorila" data-desc="The gorila: powerful predators, apex of the savannah. Learn about their pride structure and conservation." alt="gorila">
+    <img src="images/paret.jpg" data-src="images/paret.jpg" data-title="Paret" data-desc="The giant paret: a symbol of conservation, native to bamboo forests." alt="paret">
+    <img src="images/mour.jpg" data-src="images/mour.jpg" data-title="peacock" data-desc="peacock thrive in cold climates and are famous for their parenting-care rituals." alt="peacock">
+    <img src="images/white.jpg" data-src="images/white.jpg" data-title="indri" data-desc="The indri  is one of the largest of all species of lemur. It is native to Madagascar." alt="indri">
+    
+    <img src="images/birds 2.jpg" data-src="images/birds 2.jpg" data-title="goose" data-desc="The goose is a bird that has evolved over millions of years to live near the freshwater rivers, lakes, ponds, and streams of Europe, Asia, and North America. " alt="goose">
+    <img src="images/snake.jpg" data-src="images/snake.jpg" data-title="snake" data-desc="They are relatively small with a maximum length of around 2½ feet but more often are much smaller, with full-grown snakes sometimes no longer than eight inches" alt="snake">
+    <img src="images/girgiti.jpg" data-src="images/girgiti.jpg" data-title="girgiti" data-desc="The panther chameleon (Furcifer pardalis) is found in the tropical forests of Madagascar. It exhibits a wide range of colors depending on its mood, temperature, and light exposure. The species is relatively common in the wild and also bred in captivity." alt="girgiti">
+    <img src="images/butterfly.jpg" data-src="images/butterfly.jpg" data-title="butterfly" data-desc="The blue morpho is one of the most beautiful butterflies in the world. It features deep blue wings ringed by small white dots. With an average 8-inch wingspan, it’s large enough to make a striking appearance." alt="butterfly">
+  </div>
+</div>
+
+</main>
+
+
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.835482674093!2d139.7005534155352!3d35.689521380192464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd8dfdfd3d3%3A0x8c1891d3f7df5ac8!2sShinjuku%20Station!5e0!3m2!1sen!2sjp!4v1700001110000"
+        width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="footer-info">
+      <h2>City Zoo</h2>
+      <p>
+        123 Wildlife Avenue<br>
+        Shinjuku, Tokyo, Japan<br>
+        Phone: +81 03-1234-5678<br>
+        Email: info@cityzoo.jp
+      </p>
+    </div>
+  </div>
+
+  <p class="footer-copy">© 2025 City Zoo. All rights reserved.</p>
+</footer>
+
+
+<div id="image-modal" class="modal" onclick="">
+  <div class="modal-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+      <strong id="modal-title">Image</strong>
+      <button class="close">Close</button>
+    </div>
+    <img id="modal-img" src="" alt="" style="width:100%;height:auto;border-radius:8px;">
+    <p id="modal-desc" style="margin-top:8px;color:var(--muted)"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

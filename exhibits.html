@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Exhibits — City Zoo</title>
+<link rel="icon" href="images/penguin.png">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="header">
+  <div class="container header-inner">
+    <div class="brand">
+      <img src="images/Aquarium.png" alt="logo">
+      <div><h1>City Zoo</h1><div class="small">Explore. Learn. Protect.</div></div>
+    </div>
+    <nav>
+      <ul>
+        <li class="tooltip" data-tip="Go to Home"><a href="index.html">Home</a></li>
+        <li class="tooltip" data-tip="Visitor Info"><a href="visitors.html">Visitors</a></li>
+        <li class="tooltip" data-tip="See Exhibits"><a href="exhibits.html">Exhibits</a></li>
+        <li class="tooltip" data-tip="Animal Species"><a href="species.html">Species</a></li>
+        <li class="tooltip" data-tip="Photo Gallery"><a href="gallery.html">Gallery</a></li>
+        <li class="tooltip" data-tip="Volunteer with us"><a href="volunteer.html">Volunteer</a></li>
+        <li class="tooltip" data-tip="Jobs & openings"><a href="recruitment.html">Recruitment</a></li>
+        <li class="tooltip" data-tip="Buy Tickets"><a href="tickets.html">Tickets</a></li>
+        <li class="tooltip" data-tip="Join Membership"><a href="membership.html">Membership</a></li>
+        <li class="tooltip" data-tip="Contact us"><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+<main class="container" id="main">
+
+<div class="detail">
+  <h2>Our Exhibits</h2>
+  <p class="small">Explore immersive exhibits designed to showcase animals in habitats resembling their natural environments. Highlights include the Tropical Rainforest, Savannah Gallery, Aquarium, Emperor Penguins and Aquatic Life sections. Each exhibit blends education with conservation messages and hands-on learning for families and schools.</p>
+  <div class="grid" style="margin-top:12px;">
+    <div class="card"><img src="images/tropical.png" data-src="images/tropical.png" data-title="Tropical Rainforest" data-desc=""><h4>Tropical Rainforest</h4><a class="btn ghost" href="tropical.html">Details</a></div>
+    <div class="card"><img src="images/giraff.png" data-src="images/giraff.png" data-title="Savannah Gallery" data-desc=""><h4>Giraff</h4><a class="btn ghost" href="savannah.html">Details</a></div>
+    <div class="card"><img src="images/Aquarium.png" data-src="images/Aquarium.png" data-title="Aquarium" data-desc=""><h4>Aquarium</h4><a class="btn ghost" href="aquarium.html">Details</a></div>
+    <div class="card"><img src="images/penguin.png" data-src="images/penguin.png" data-title="Penguins" data-desc=""><h4>Penguins</h4><a class="btn ghost" href="penguins.html">Details</a></div>
+  
+    <div class="card"><img src="images/dolpin.jpg" data-src="images/dolpin.jpgg" data-title="Dolpin" data-desc=""><h4>Dolpin</h4><a class="btn ghost" href="aquarium.html">Details</a></div>
+    <div class="card"><img src="images/glary.png" data-src="images/glary.png" data-title="Animals park" data-desc=""><h4>Animals park</h4><a class="btn ghost" href="penguins.html">Details</a></div>
+  </div>
+</div>
+
+</main>
+
+
+<footer>
+  <div class="footer-wrap">
+    <div class="footer-map">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.835482674093!2d139.7005534155352!3d35.689521380192464!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd8dfdfd3d3%3A0x8c1891d3f7df5ac8!2sShinjuku%20Station!5e0!3m2!1sen!2sjp!4v1700001110000"
+        width="100%" height="220" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+
+    <div class="footer-info">
+      <h2>City Zoo</h2>
+      <p>
+        123 Wildlife Avenue<br>
+        Shinjuku, Tokyo, Japan<br>
+        Phone: +81 03-1234-5678<br>
+        Email: info@cityzoo.jp
+      </p>
+    </div>
+  </div>
+
+  <p class="footer-copy">© 2025 City Zoo. All rights reserved.</p>
+</footer>
+
+
+<div id="image-modal" class="modal" onclick="">
+  <div class="modal-card">
+    <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:8px;">
+      <strong id="modal-title">Image</strong>
+      <button class="close">Close</button>
+    </div>
+    <img id="modal-img" src="" alt="" style="width:100%;height:auto;border-radius:8px;">
+    <p id="modal-desc" style="margin-top:8px;color:var(--muted)"></p>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
